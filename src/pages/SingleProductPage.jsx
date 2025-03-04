@@ -13,7 +13,7 @@ const SingleProductPage = ({ products }) => {
     const fetchProductBySku = async () => {
       try {
         const response = await axios.get(
-          `https://cors-anywhere.herokuapp.com/http://38.242.148.71:9084/rest/test_view/V1/products/${encodedSku}`,
+          `http://38.242.148.71:9084/rest/test_view/V1/products/${encodedSku}`,
           {
             headers: {
               Authorization: import.meta.env.AUTH_TOKEN,

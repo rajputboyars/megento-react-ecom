@@ -16,7 +16,7 @@ const Products = () => {
       try {
         const { data } = await axios.get(
           // "http://38.242.148.71:9084/rest/V1/products?searchCriteria=",
-          `https://cors-anywhere.herokuapp.com/http://38.242.148.71:9084/rest/${store_type}/V1/products?searchCriteria[filterGroups][0][filters][0][field]=store_id&searchCriteria[filterGroups][0][filters][0][value]=${store_id}`,
+          `http://38.242.148.71:9084/rest/${store_type}/V1/products?searchCriteria[filterGroups][0][filters][0][field]=store_id&searchCriteria[filterGroups][0][filters][0][value]=${store_id}`,
           {
             headers: {
               Authorization: import.meta.env.AUTH_TOKEN,
