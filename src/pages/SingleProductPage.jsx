@@ -7,7 +7,6 @@ const SingleProductPage = ({ products }) => {
   const { productId } = useParams(); // Get ID from URL
   const [product, setProduct] = useState(null);
   const encodedSku = decodeURIComponent(productId);
-  console.log(encodedSku,"encoded");
   
   useEffect(() => {
     const fetchProductBySku = async () => {
@@ -21,17 +20,12 @@ const SingleProductPage = ({ products }) => {
           }
         );
         setProduct(response.data);
-        console.log(response.data);
         
       } catch (error) {
         console.error("Error fetching product:", error);
       }
     };
     fetchProductBySku()
-    // Find product from the array based on ID
-    // const foundProduct = products.find((p) => p.sku === encodedSku);
-    // setProduct(foundProduct);
-    // console.log(foundProduct,"filteredproduct");
     
   }, [productId, products]);
 

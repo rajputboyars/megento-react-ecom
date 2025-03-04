@@ -43,7 +43,6 @@ const Products = () => {
     (currentPage - 1) * perPage,
     currentPage * perPage
   );
-  // console.log(displayedProducts);
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
