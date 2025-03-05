@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-xl transition">
       <img
-        src={`https://38.242.148.71:9084/media/catalog/product/${imageUrl}`}
+        src={`http://38.242.148.71:9084/media/catalog/product/${imageUrl}`}
         alt={product.name} // Use 'name' instead of 'title'
         className="w-full h-60 object-contain"
       />
