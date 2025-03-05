@@ -11,6 +11,8 @@ const ProductCard = ({ product }) => {
         src={`http://38.242.148.71:9084/media/catalog/product/${imageUrl}`}
         alt={product.name} // Use 'name' instead of 'title'
         className="w-full h-60 object-contain"
+        referrerPolicy="no-referrer"
+        crossOrigin="anonymous"
       />
       <h3 className="text-lg font-semibold mt-2">{product.name}</h3>{" "}
       {/* Use 'name' */}
