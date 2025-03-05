@@ -3,6 +3,10 @@
         {
             "source": "/product/:path*",
             "destination": "http://38.242.148.71:9084/media/catalog/product/:path*"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }

@@ -58,13 +58,13 @@ const SingleProductPage = ({ products }) => {
       {/* Product Image & Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex justify-center items-center flex-col">
-          <img src={`http://38.242.148.71:9084/media/catalog/product/${imageUrl}`} alt={product.name} className="w-[500px] h-auto object-contain" />
+          <img src={`/product/${imageUrl}`} alt={product.name} className="w-[500px] h-auto object-contain" />
           {/* Additional Images */}
           <div className="flex gap-2 mt-4">
             {product.media_gallery_entries.map((img, index) => (
               <img
                 key={index}
-                src={`http://38.242.148.71:9084/media/catalog/product/${img.file}`}
+                src={`/product/${img.file}`}
                 alt={`Image ${index}`}
                 className="w-20 h-20 object-contain border p-1"
               />
